@@ -1,7 +1,5 @@
 Video: https://www.youtube.com/watch?v=8iiNr10hcHM
 
-Part 2: https://github.com/thaolt/myagent
-
 # Learning JAVA
 
 Hello
@@ -23,3 +21,5 @@ Hello
 - https://github.com/thaolt/hellojava
 
 # Javaagent and Javassist
+
+Part 2: https://github.com/thaolt/myagent
