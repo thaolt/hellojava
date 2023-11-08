@@ -4,7 +4,7 @@ SRC_DIR = ./src
 OUT_DIR = ./out
 SOURCES = $(shell find $(SRC_DIR) -name '*.java' -print)
 CLASSES = $(patsubst $(SRC_DIR)/%.java, $(OUT_DIR)/%.class, $(SOURCES))
-JCFLAGS = -d $(OUT_DIR) -cp $(SRC_DIR)
+JCFLAGS = -d $(OUT_DIR) -sourcepath $(SRC_DIR) -cp $(SRC_DIR)
 JVMFLAGS = -cp $(OUT_DIR)
 MAINCLASS = theapp.HelloWorld
 JARFILENAME = helloworld.jar
@@ -25,4 +25,4 @@ jar: build
 
 clean:
 	rm -rf $(OUT_DIR)
-	rm $(JARFILENAME)
+	rm -f $(JARFILENAME)
